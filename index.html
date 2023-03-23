@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <link rel="stylesheet" href="./own.css">
+    <!-- linking the leaflet API -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script defer src="./own.js"></script>
+    <!-- linking Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="map">
+
+    </div>
+
+    <div class="show modal hidden">
+        <div class="div_close"><button class="close" id="close"><i class="ri-close-line"></i id="x"></button></div>
+      <label for="head"></label>
+      <input type="text" id="head" placeholder="title">
+      <textarea name="text" id="text" cols="30" rows="10" placeholder="enter what you feel?"></textarea>
+      <button id="submit">add</button>
+    </div>
+    <div class="textinsert hidden">
+   <p id="containtt"></p>
+    </div>
+
+    <div class="initial_div hidden">
+        <p>😶‍🌫️ <br> Click on map,  add something you feel on that place <br> 🤐</p>
+    </div>
+</body>
+</html>
