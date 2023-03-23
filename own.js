@@ -142,3 +142,10 @@ _showPosition(obj.coords,obj.head,obj.text);
   _showPosition(aa,"😣😌🫡🤗🤗","you did not add!");
  }
 })
+
+document.querySelector('#clear').addEventListener('click',function(e){
+  localStorage.clear();
+
+location.reload();
+ console.log("load");
+})
